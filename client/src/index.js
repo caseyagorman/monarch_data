@@ -6,12 +6,12 @@ import { Router, Route } from "react-router-dom";
 import { Provider } from "react-redux";
 import configureStore from "./redux/store/configureStore";
 import * as serviceWorker from "./serviceWorker";
-import Home from "./containers/Home";
+import SecondGradeELA from "./containers/SecondGradeELA";
 const initialState = {};
 const store = configureStore(initialState);
 const AppRouter = () => (
   <Router history={history}>
-    <Route path="/" component={Home} />
+    <Route path="/" component={SecondGradeELA} />
   </Router>
 );
 export default AppRouter;

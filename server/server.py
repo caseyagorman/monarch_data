@@ -11,7 +11,7 @@ api = Api(app)
 app.debug = True
 
 
-@app.route("/")
+@app.route("/api/second_grade_ela")
 def index():
     with open('2nd_ELA.csv') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')

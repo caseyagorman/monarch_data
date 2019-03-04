@@ -11,7 +11,9 @@ const initialState = {};
 const store = configureStore(initialState);
 const AppRouter = () => (
   <Router history={history}>
-    <Route path="/" component={SecondGradeELA} />
+    <div>
+      <Route path="/second-grade-ela" component={SecondGradeELA} />
+    </div>
   </Router>
 );
 export default AppRouter;

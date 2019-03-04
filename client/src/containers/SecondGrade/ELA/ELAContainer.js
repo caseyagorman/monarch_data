@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import * as dataActions from "../redux/actions/dataActions";
+import * as dataActions from "../../../redux/actions/dataActions";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-import DoughnutChart from "./DoughnutChart";
+import SecondGradeELA from "../../../components/SecondGrade/ELA/SecondGradeELA";
 
-class SecondGradeELA extends Component {
+class SecondGradeELABOY extends Component {
   componentDidMount() {
     this.props.dataActions.fetchData();
   }
@@ -14,15 +14,9 @@ class SecondGradeELA extends Component {
     if (!data) {
       return <div />;
     }
-    return (
-      <DoughnutChart
-        data={data}
-        meeting={11}
-        farBelow={4}
-        testType={"september_scores"}
-      />
-    );
+    return <SecondGradeELA data={data} />;
   }
+
   render() {
     return this.displayChart(this.props.data);
   }
@@ -43,4 +37,4 @@ function mapDispatchToProps(dispatch) {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(SecondGradeELA);
+)(SecondGradeELABOY);

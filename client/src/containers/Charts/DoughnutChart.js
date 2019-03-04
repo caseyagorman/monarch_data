@@ -46,7 +46,7 @@ class DoughnutChart extends Component {
     // };
     return (
       <div className="doughnut-chart">
-        <Doughnut data={data} />
+        <Doughnut height={500} width={500} data={data} />
       </div>
     );
   }

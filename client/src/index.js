@@ -7,12 +7,14 @@ import { Provider } from "react-redux";
 import configureStore from "./redux/store/configureStore";
 import * as serviceWorker from "./serviceWorker";
 import ELAContainer from "./containers/SecondGrade/ELA/ELAContainer";
+import LineChart from "./containers/Charts/LineChart";
 const initialState = {};
 const store = configureStore(initialState);
 const AppRouter = () => (
   <Router history={history}>
     <div>
       <Route path="/second-grade-ela" component={ELAContainer} />
+      <Route path="/line-chart" component={LineChart} />
     </div>
   </Router>
 );

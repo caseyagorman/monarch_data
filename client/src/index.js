@@ -8,6 +8,7 @@ import configureStore from "./redux/store/configureStore";
 import * as serviceWorker from "./serviceWorker";
 import ELAContainer from "./containers/SecondGrade/ELA/ELAContainer";
 import LineChart from "./containers/Charts/LineChart";
+import BarGraph from "./containers/Charts/BarGraph";
 const initialState = {};
 const store = configureStore(initialState);
 const AppRouter = () => (
@@ -15,6 +16,7 @@ const AppRouter = () => (
     <div>
       <Route path="/second-grade-ela" component={ELAContainer} />
       <Route path="/line-chart" component={LineChart} />
+      <Route path="/bar-graph" component={BarGraph} />
     </div>
   </Router>
 );

@@ -116,7 +116,7 @@ class LineChart extends Component {
       10,
       6,
       11,
-      " ",
+
       11,
       12,
       16,
@@ -766,6 +766,7 @@ class LineChart extends Component {
       labels: dates,
       datasets: [
         {
+          label: "daily users",
           fill: false,
           lineTension: 0.1,
           backgroundColor: "rgb(0, 61, 89, 0.7)",
